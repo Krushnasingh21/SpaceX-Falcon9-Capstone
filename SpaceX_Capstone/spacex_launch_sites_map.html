@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ba7cb8080795d45761ed08bf7710e8d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8ba7cb8080795d45761ed08bf7710e8d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8ba7cb8080795d45761ed08bf7710e8d = L.map(
+                "map_8ba7cb8080795d45761ed08bf7710e8d",
+                {
+                    center: [30.0, -100.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e00bf14d5f7177c1710a8b6adaa2d46d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e00bf14d5f7177c1710a8b6adaa2d46d.addTo(map_8ba7cb8080795d45761ed08bf7710e8d);
+        
+    
+            var marker_74bbcef96f9e91aafe88fc4cdbac3520 = L.marker(
+                [34.6321, -120.6108],
+                {
+}
+            ).addTo(map_8ba7cb8080795d45761ed08bf7710e8d);
+        
+    
+            var icon_5ed2bbeca3d81c8b974e751a60af8b04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acf24be337698ada78ddd0992a6b1d64 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_29a7a1d85d55f005ced2c9d32e43b4d8 = $(`<div id="html_29a7a1d85d55f005ced2c9d32e43b4d8" style="width: 100.0%; height: 100.0%;">         <div style="width:280px">             <h4>Space Launch Complex 4E</h4>             <b>Location:</b> Vandenberg Space Force Base, California<br>             <b>Records explicitly linked to this site:</b>             1<br>             <b>Known outcomes:</b> 0<br>             <b>Success rate among known outcomes:</b>             N/A         </div>         </div>`)[0];
+                popup_acf24be337698ada78ddd0992a6b1d64.setContent(html_29a7a1d85d55f005ced2c9d32e43b4d8);
+            
+        
+
+        marker_74bbcef96f9e91aafe88fc4cdbac3520.bindPopup(popup_acf24be337698ada78ddd0992a6b1d64)
+        ;
+
+        
+    
+    
+            marker_74bbcef96f9e91aafe88fc4cdbac3520.bindTooltip(
+                `<div>
+                     Space Launch Complex 4E
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74bbcef96f9e91aafe88fc4cdbac3520.setIcon(icon_5ed2bbeca3d81c8b974e751a60af8b04);
+            
+    
+            tile_layer_e00bf14d5f7177c1710a8b6adaa2d46d.addTo(map_8ba7cb8080795d45761ed08bf7710e8d);
+        
+    
+                marker_74bbcef96f9e91aafe88fc4cdbac3520.setIcon(icon_5ed2bbeca3d81c8b974e751a60af8b04);
+            
+</script>
+</html>
